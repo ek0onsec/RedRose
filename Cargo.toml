@@ -1,0 +1,10 @@
+[package]
+name = "redrose"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+aes = "0.7"
+block-modes = "0.8"
+generic-array = "0.14.7"

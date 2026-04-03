@@ -1,0 +1,56 @@
+/* src/app.css — Noir Ops theme */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-deep:        #070709;
+  --bg-mid:         #0a0a0e;
+  --bg-panel:       #0e0e14;
+  --bg-field:       #080808;
+  --border-dark:    #1c1c24;
+  --border-mid:     #14141c;
+  --red:            #c0392b;
+  --red-glow:       rgba(192, 57, 43, 0.35);
+  --red-subtle:     rgba(192, 57, 43, 0.08);
+  --text-primary:   #888888;
+  --text-secondary: #2e2e3a;
+  --text-muted:     #1c1c26;
+  --text-red:       #c0392b;
+  --green:          #27ae60;
+  --green-glow:     rgba(39, 174, 96, 0.4);
+  --font-mono:      'Share Tech Mono', 'Courier New', monospace;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--border-dark); border-radius: 2px; }
+
+.label {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
